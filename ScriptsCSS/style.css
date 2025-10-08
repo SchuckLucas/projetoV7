@@ -1,1 +1,262 @@
+* {
+  margin: 0;
+}
 
+:root {
+  --neon: #00d4ff;
+  --cor-box1: #87cefa;
+  --cor-box2: #D1EEEE;
+  --cor-box3: #fffafa;
+  --cor-sombra: #a0a9c0;
+  --blue: #4876FF;
+  --cor-fonte: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-box1: #16213e;
+    --cor-box2: #1a1a2e;
+    --cor-box3: #1d2a58;
+    --cor-fonte: #ffffff;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.textos,
+.perguntas {
+  text-shadow: 0 0 3px var(--neon);
+  color: var(--cor-fonte);
+}
+
+a {
+  color: var(--blue);
+}
+
+.respostas {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+header {
+  background-color: var(--cor-box1);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  background-color: var(--cor-box2);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer{
+  gap: 50px;
+  height: 150px;
+  background-color: var(--cor-box1);
+}
+
+footer, footer > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+footer > div{
+  gap: 10px;
+}
+
+footer > div > img{
+  border-radius: 50%;
+  width: 20%;
+  height: 100%;
+}
+
+#div_esquerda,
+#div_direita {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: movimeto_inicial 1s linear;
+}
+
+#div_esquerda{
+  gap: 10px;
+}
+
+#div_direita{
+  gap: 30px;
+}
+
+.perguntas {
+  background-color: var(--cor-box1);
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid var(--neon);
+  box-shadow: 0 0 5px var(--neon);
+  cursor: pointer;
+  width: 100%;
+}
+
+#bt_doar {
+  animation: mudar_cor 3s linear infinite;
+  position: fixed;
+  bottom: 30px;
+  font-size: 20px;
+}
+
+#bt_retornar {
+  position: fixed;
+  background-color: var(--cor-box3);
+  border-radius: 40%;
+  padding: 20px;
+  font-size: 20px;
+  bottom: 30px;
+  right: 20px;
+}
+
+#bt_retornar:hover {
+  background-color: var(--blue);
+}
+
+#bt_enviar {
+  align-self: flex-start;
+}
+
+#bt_contato {
+  margin-top: 20px;
+}
+
+.botoes_main {
+  background-color: var(--neon);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px var(--neon);
+  font-size: 15px;
+  transition: transform 0.2s ease;
+}
+
+.botoes_main:hover {
+  transform: scale(1.05);
+}
+
+.botoes_main:active {
+  transform: scale(0.95);
+}
+
+.botoes {
+  border: none;
+  outline: none;
+  color: var(--cor-fonte);
+  cursor: pointer;
+}
+
+.imagens {
+  border-radius: 15px;
+  box-shadow: 2px 2px 20px var(--cor-sombra);
+}
+
+.textos_info,
+.box {
+  box-shadow: 0px 0px 15px var(--neon);
+  background-color: var(--cor-box1);
+  padding: 20px;
+}
+
+.textos_info {
+  color: var(--cor-fonte);
+  font-size: 20px;
+  width: 50%;
+  border-radius: 3px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.box_div{
+  width: 100%;
+  background-color: var(--cor-box1);
+  box-sizing: border-box;
+  box-shadow: none;
+  gap: 15px;
+  transition: transform 0.5s ease;
+}
+
+.box_div:hover{
+  transform: scale(1.01);
+}
+
+.inputs {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#input_duvidas {
+  align-self: flex-start;
+  background-color: var(--cor-box3);
+  color: var(--cor-fonte);
+  width: 80%;
+  font-size: 20px;
+}
+
+#input_duvidas::placeholder {
+  color: var(--cor-sombra);
+  font-size: 20px;
+}
+
+.videos {
+  border-radius: 20px;
+}
+
+.subtitulos {
+  max-width: 80%;
+  text-align: center;
+}
+
+@keyframes movimeto_inicial {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  50% {
+    transform: translateY(17px) scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes mudar_cor {
+  0% {
+    background-color: var(--neon);
+    box-shadow: 2px 2px 5px var(--neon);
+  }
+  50% {
+    background-color: var(--blue);
+    box-shadow: 2px 2px 5px var(--blue);
+  }
+  100% {
+    background-color: var(--neon);
+    box-shadow: 2px 2px 5px var(--neon);
+  }
+}
