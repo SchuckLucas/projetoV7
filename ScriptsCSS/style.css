@@ -32,6 +32,20 @@ body {
   color: var(--cor-fonte);
 }
 
+.perguntas {
+  background-color: var(--cor-box1);
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid var(--neon);
+  box-shadow: 0 0 5px var(--neon);
+  cursor: pointer;
+  width: 100%;
+}
+
+.perguntas > h2{
+  user-select: none;
+}
+
 a {
   color: var(--blue);
 }
@@ -97,16 +111,6 @@ footer > div > img{
 
 #div_direita{
   gap: 30px;
-}
-
-.perguntas {
-  background-color: var(--cor-box1);
-  padding: 10px;
-  border-radius: 10px;
-  border: 2px solid var(--neon);
-  box-shadow: 0 0 5px var(--neon);
-  cursor: pointer;
-  width: 100%;
 }
 
 #bt_doar {
