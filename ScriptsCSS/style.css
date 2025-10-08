@@ -42,7 +42,7 @@ body {
   width: 100%;
 }
 
-.perguntas > h2{
+.perguntas > h2, .perguntas > p{
   user-select: none;
 }
 
