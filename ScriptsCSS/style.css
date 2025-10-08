@@ -26,6 +26,13 @@ body {
   margin: 0;
 }
 
+ul{
+  color: var(--cor-fonte);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .textos,
 .perguntas {
   text-shadow: 0 0 3px var(--neon);
@@ -266,4 +273,3 @@ footer > div > img{
     box-shadow: 2px 2px 5px var(--neon);
   }
 }
-
