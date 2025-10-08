@@ -8,13 +8,13 @@
   <body>
     <header>
       <h1 id="titulo" class="textos">Campanha de ajuda aos Emigrantes</h1>
-      <button id="bt_info" class="botoes botoes_main">Sobre Nós</button>
+      <button id="bt_info" class="botoes botoes_main">Sobre</button>
     </header>
     <main>
       <div id="div_esquerda">
         <h2 class="textos">Perguntas Frequentes:</h2>
         <div class="perguntas">
-          <h2>O que doar?</h2>
+          <h2>O que posso doar?</h2>
         </div>
         <div class="perguntas">
           <h2>Por que doar?</h2>
@@ -23,13 +23,44 @@
           <h2>Como doar?</h2>
         </div>
         <div class="perguntas">
-          <h2>Qual é a agência?</h2>
+          <h2>O que farão com os itens doados?</h2>
         </div>
         <div class="perguntas">
-          <h2>O que farão com os alimentos doados?</h2>
+          <h2>Quais as datas e locais?</h2>
         </div>
-        <h2 class="textos">Dúvidas:</h2>
+        <div class="perguntas">
+          <h2>Para quem estou doando?</h2>
+        </div>
+        <h2 style="margin-top: 50px;" class="textos">Sobre a campanha:</h2>
+        <p style="margin-top: 30px; width: 60%;" class="textos_info">
+          Essa é uma campanha feita por alunos do colégio donaduzzi com o
+          objetivo de arecadar doações em conjunto com e Embaixada Solidária e
+          com o Biopark. Os itens que podem ser doados são: roupas, brinquedos e
+          alimentos não perecíveis.
+        </p>
+        <h2 style="margin-top: 50px;" class="textos">Colaboradores:</h2>
+        <div style="margin-top: 30px;" class="box box_div">
+          <h3 style="align-self: start;" class="textos subtitulos">Biopark</h3>
+          <img
+            class="imagens"
+            src="Midias/biopark.png"
+            alt="Logo Embaixada Solidária"
+          />
+          <h3
+            style="align-self: start; margin-top: 20px;"
+            class="textos subtitulos"
+          >
+            Embaixada Solidária
+          </h3>
+          <img
+            class="imagens"
+            src="Midias/logo_embaixada.jpeg"
+            alt="Logo Biopark"
+          />
+        </div>
+        <h2 style="margin-top: 20px;" class="textos">Dúvidas:</h2>
         <input
+          style="margin-top: 20px;"
           type="text"
           placeholder="Menssagem"
           id="input_duvidas"
@@ -38,26 +69,35 @@
         <button id="bt_enviar" class="botoes botoes_main">Enviar</button>
       </div>
       <div id="div_direita">
-        <h2 class="textos">Dados:</h2>
-        <h3 class="textos subtitulos">
-          Quantidade de emigrantes que morrem após chegarem no Brasil
-        </h3>
-        <img class="imagens" src="Midias/grafico1.png" alt="gráfico" />
-        <h3 class="textos subtitulos">
-          Porcentagem de emigrantes menores de idade
-        </h3>
-        <img class="imagens" src="Midias/grafico2.jpg" alt="gráfico" />
-        <h3 class="textos subtitulos">
-          Porcentagem dos emigrantes que chegam sem praticamente nenhum recurso
-          no Brasil
-        </h3>
-        <img class="imagens" src="Midias/grafico3.png" alt="gráfico" />
-        <h3 class="textos">
-          Quantidade de refugiados que vem para o Brasil por ano
-        </h3>
-        <img class="imagens" src="Midias/gráfico4.png" alt="gráfico" />
-        <h2 class="textos">Sobre nosso trabalho:</h2>
-        <p class="textos_info">
+        <h1 class="textos">Dados:</h1>
+        <div class="box box_div">
+          <h2 class="textos subtitulos">
+            Dificuldades doa emigrantes ao chegarem no Brasil, de acordo com
+            alunos do colégio donaduzzi:
+          </h2>
+          <img class="imagens" src="Midias/grafico1.png" alt="gráfico" />
+          <p style="font-size: 18px; width: 70%;" class="textos_info">
+            Resultados obtidos através da pergunta feita em amostra para
+            estudantes do colégio Donaduzzi . A pergunta direcionada aos alunos
+            foi: “Qual é a maior dificuldade que um emigrante pode enfrentar ao
+            chegar em um país com a cultura completamente diferente?
+          </p>
+        </div>
+        <div class="box box_div">
+          <h2 class="textos subtitulos">
+            Valores adicionais sobre os emigrantes:
+          </h2>
+          <img class="imagens" src="Midias/grafico2.png" alt="gráfico" />
+        </div>
+        <div class="box box_div">
+          <h2 class="textos subtitulos">
+            Porcentagem estimada de alunos do colégio donaduzzi que conheceram
+            emigrantes:
+          </h2>
+          <img class="imagens" src="Midias/grafico3.png" alt="gráfico" />
+        </div>
+        <h1 class="textos">Sobre nosso trabalho:</h1>
+        <p style="width: 70%;" class="textos_info">
           Nós ajudamos os refugiados emigrantes que vem para o Brasil com
           campanhas de destribuição de recursos anualmente, ajudando milhoes que
           não tiveram uma chance, mas que agora poderam começar uma vida nova no
@@ -67,11 +107,19 @@
           Entar em contato
         </button>
       </div>
-      <button id="bt_login" class="botoes botoes_main">Entrar</button>
-      <button id="bt_cadastro" class="botoes botoes_main">Cadastrar</button>
       <button id="bt_doar" class="botoes botoes_main">Doe Agora</button>
       <button id="bt_retornar" class="botoes">&uarr;</button>
     </main>
+    <footer>
+      <div>
+        <img src="Midias/biopark.png" alt="Logo Biopark" />
+        <h3 class="textos">Biopark</h3>
+      </div>
+      <div>
+        <img src="Midias/logo_embaixada.jpeg" alt="Logo Embaixada Solidária" />
+        <h3 class="textos">Embaixada Solidária</h3>
+      </div>
+    </footer>
   </body>
   <script type="module" src="ScriptsJS/script.js"></script>
 </html>
