@@ -200,10 +200,13 @@ footer > div > img{
   box-sizing: border-box;
   box-shadow: none;
   gap: 15px;
+}
+
+.box_div, .perguntas{
   transition: transform 0.5s ease;
 }
 
-.box_div:hover{
+.box_div:hover, .perguntas:hover{
   transform: scale(1.01);
 }
 
