@@ -5,8 +5,6 @@ const botao_retornar = document.getElementById("bt_retornar");
 const botao_contato = document.getElementById("bt_contato");
 const botao_info = document.getElementById("bt_info");
 const botao_doar = document.getElementById("bt_doar");
-const botao_login = document.getElementById("bt_login");
-const botao_cadastro = document.getElementById("bt_cadastro");
 
 const respostas = [
   "Roupas, brinquedos e materiais escolares.",
@@ -47,10 +45,4 @@ botao_info.addEventListener("click", () => {
 });
 botao_doar.addEventListener("click", () => {
   window.location.href = "../ScriptsHTML/doar.html";
-});
-botao_login.addEventListener("click", () => {
-  window.location.href = "../ScriptsHTML/entrar.html";
-});
-botao_cadastro.addEventListener("click", () => {
-  window.location.href = "../ScriptsHTML/cadastro.html";
 });
