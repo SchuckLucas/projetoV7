@@ -9,11 +9,12 @@ const botao_login = document.getElementById("bt_login");
 const botao_cadastro = document.getElementById("bt_cadastro");
 
 const respostas = [
-  "Alimentos não pericíveis não prejudiciais a saude humana.",
-  "Quando refugiados chegam ao país eles não tem condições de sobreviver muito menos de ter uma boa qualidade de vida, pois muitos deixaram tudo para tráz.",
-  "Vá até uma de nossas agencias, qualquer dúvida entre um contato.",
-  "O nome da nossa agencia é ____ e ficamos responssaveis por receber, verificar e distribuir os alimentos doados aos Emigrantes.",
-  "Distribuiremos os alimentos doados aos Emigrantes de acordo com sua maior ou menor necessidade.",
+  "Roupas, brinquedos e materiais escolares.",
+  "Para ajudar os refugiados que chegam ao nosso país sem praticamente nenhum recurso.",
+  "Vá até um dos pontos de doação das ___ as ___ horas.",
+  "Os itens doados serão passados para a Embaixada Solidária, a qual vai distribuir para quem mais precissa.",
+  "De ___ a ___ das ___ as ___",
+  "Os itens serão repassados para a Embaixada Solidária em Toledo PR, a qual distribuira para os emigrantes refugiados que necessitam.",
 ];
 
 for (let i = 0; i < elementos_perguntas.length; i++) {
