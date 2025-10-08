@@ -130,7 +130,7 @@ footer > div > img{
 }
 
 #bt_retornar:hover {
-  background-color: var(--blue);
+  background-color: var(--neon);
 }
 
 #bt_enviar {
@@ -266,3 +266,4 @@ footer > div > img{
     box-shadow: 2px 2px 5px var(--neon);
   }
 }
+
